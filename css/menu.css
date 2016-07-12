@@ -1,0 +1,86 @@
+/* Shubha Ravikumar, FNU Account: jadrn046
+CS545, Fall 2014
+Project #2 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a.ref {
+	color: #888;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+a.ref:hover {
+	color: #000;
+}
+
+a.back {
+	width: 184px;
+	height: 32px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background: transparent url(../back.png) no-repeat top left;
+}
+
+ul#menu {
+	list-style: none;
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	font-size: 36px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #999;
+	letter-spacing: -2px;
+}
+
+ul#menu li {
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+
+ul#menu a {
+	cursor: pointer;
+	position: relative;
+	float: left;
+	bottom: -95px;
+	line-height: 20px;
+	width: 170px;
+	text-decoration: none;
+}
+
+ul#menu span.title {
+	display: block;
+	height: 26px;
+	text-shadow: 1px 1px 1px #000;
+	color: #B7B7B6;
+	text-indent: 5px;
+}
+
+ul#menu span.description {
+	width: 120px;
+	height: 80px;
+	background-color: #008080;
+	border: 3px solid #fff;
+	color: #fff;
+	display: block;
+	font-size: 24px;
+	padding: 10px;
+	box-shadow: 1px 1px 6px #000;
+	border-radius: 10px;
+	letter-spacing: 1px;
+}
+
+ul#menu a:hover span.description {
+	background-color: #008080;
+}
+
+ul#menu a:hover span.title {
+	color: #008080;
+}

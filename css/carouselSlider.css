@@ -1,0 +1,24 @@
+/* Shubha Ravikumar, FNU Account: jadrn046
+CS545, Fall 2014
+Project #2 */
+.imageSlider {
+	width: 960px;
+	/*  margin: 0 auto; */
+	padding-top: 0px;
+	border: 2px solid transparent;
+}
+
+.slider {
+	margin: 0 10px 10px 0;
+	width: 580px; /* Update to your slider width */
+	height: 250px; /* Update to your slider height */
+	position: absolute;
+	overflow: hidden;
+}
+
+.slider li {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

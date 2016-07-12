@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+Shubha Ravikumar, FNU Account: jadrn046
+CS545, Fall 2014
+Project #2b -->
+<head>
+<meta charset="utf-8">
+<title>Login Form</title>
+<link rel="stylesheet" href="css/mycssfile.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+<script src="js/onPageLoad.js"></script>
+<script type="text/javascript" src="loginValidation.js"></script>
+
+</head>
+<body>
+	<div id="banner">
+		<ul id="menu">
+			<li><a href="index.html"> <span class="title">Home</span> <span
+					class="description">Explore us</span>
+			</a></li>
+			<li><a href="aboutUs.html"> <span class="title">About</span>
+					<span class="description">Learn about us</span>
+			</a></li>
+			<li><a href="programs.html"> <span class="title">Program</span>
+					<span class="description">Get more info</span>
+			</a></li>
+			<li><a href="registrationForm.html"> <span class="title">Enroll</span>
+					<span class="description">Lets get started</span>
+			</a></li>
+			<li><a href="testimonials.html"> <span class="title">Reviews</span>
+					<span class="description">Make it yours</span>
+			</a></li>
+		</ul>
+	</div>
+	<div id="container">
+		<h1>Login Form</h1>
+		<form id="registrationForm" method="post"
+		name="registrationForm" action="php/error.php">
+			<div class="formData">
+				<fieldset>
+					<legend>Login</legend>
+					<ul>
+
+						<li><label for="user">Username:</label> <input type="text"
+							name="user" />
+							<div class="errorMSg">
+								<div id="usernameErrMsg"></div>
+							</div></li>
+
+						<li><label for="pass">Password:</label> <input
+							type="password" name="pass" /><br />
+							<div class="errorMSg">
+								<div id="passErrMsg"></div>
+							</div></li>
+							</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>Report</legend>
+					<ul>
+						<li><input type="radio" name="report" value="report1" /><span
+							class="radioOption">Report that rosters for each program
+								that gives a listing of the registered participants, including
+								last name, first name, nickname and age.</span></li>
+						<li><input type="radio" name="report" value="report2" /><span
+							class="radioOption">Report that gives a list of all participants,
+								that includes all fields in the database, sorted by student last
+								name.</span>
+							<div class="errorMSg">
+								<div id="reportErrMsg"></div>
+							</div></li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<button type="reset" id="reset">Reset</button>
+					<button type="submit" id="submit">Login</button>
+				</fieldset>
+			</div>
+
+		</form>
+		<h2 id="status"></h2>
+	</div>
+	
+</body>
+</html>

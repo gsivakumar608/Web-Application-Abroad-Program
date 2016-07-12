@@ -1,0 +1,176 @@
+h1 {
+	font-weight: 200;
+	color: #888888;
+	font-size: 16pt;
+	background: transparent url(../img/h1.png) no-repeat center left;
+	padding-left: 33px;
+	margin: 7px 5px 8px 8px;
+}
+
+form#registrationForm, form#loginForm {
+	width: 880px;
+	margin: 20px auto 0px auto;
+	height: auto;
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 20px;
+	position: relative;
+}
+
+.formData {
+	position: relative;
+	width: 880px;
+}
+
+form#registrationForm fieldset, form#loginForm fieldset {
+	border: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-top: 1px solid #F1F1F1;
+}
+
+form#registrationForm fieldset:last-of-type, form#loginForm fieldset:last-of-type {
+	margin-bottom: 0;
+}
+
+form#registrationForm legend , form#loginForm legend {
+	color: #008080;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 1px #c0d576;
+	padding-left: 10px;
+}
+
+form#registrationForm fieldset fieldset legend {
+	color: #008080;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 0;
+}
+
+form#registrationForm ul li, form#loginForm ul li  {
+	background: #f4f4f4;
+	border-color: #F5FAFF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+	width : 400px;
+}
+
+form#registrationForm ul ul li {
+	background: none;
+	border: none;
+	float: left;
+	width : 400px;
+}
+
+form#registrationForm label, form#loginForm label {
+	float: left;
+	font-size: 13px;
+	width: 150px;
+}
+
+.radioOption {
+	font-size: 13px;
+	padding-right: 8px;
+}
+
+form#registrationForm input, form#registrationForm textarea, form#loginForm input
+	{
+	background: #ffffff;
+	border: none;
+	border-radius: 3px;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+form#registrationForm input[type=radio] , form#loginForm input[type=radio]{
+	margin-right: 5px;
+	padding: 10px;
+}
+
+form#registrationForm button , form#loginForm button{
+	background: #384313;
+	border: none;
+	border-radius: 20px;
+	color: #ffffff;
+	display: inline;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	margin: 25px 25px 0 25px;;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #000000;
+	background: linear-gradient(#008080, #00bfbf, #00dfdf);
+}
+
+form#registrationForm button:hover , form#loginForm button:hover {
+	color: #F5F5F0;
+	cursor: pointer;
+	background: linear-gradient(#008080, #00aaaa, #00cccc);
+}
+
+.error {
+	color: #FF6600;
+	font-size: 13px;
+	background: url(../img/cross.gif) no-repeat;
+	padding-left: 20px;
+	background-position: left;
+}
+
+.hiddenText {
+	color: #F5FAFF;
+}
+
+form#registrationForm fieldset.program {
+	width: 770px;
+	padding: 5px;
+	float: left;
+	border-top: 1px solid #F5F5F5;
+	margin-bottom: 15px;
+}
+
+form#registrationForm fieldset.parentBasicInfo {
+	border-top: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+	height: auto;
+	padding: 5px;
+	float: left;
+	width: 400px;
+}
+
+form#registrationForm fieldset.parentAdditionalInfo {
+	border-top: 1px solid #F1F1F1;
+	padding: 5px;
+	float: right;
+	margin-bottom: 15px;
+	width: 380px;
+}
+
+form#registrationForm fieldset.childBasicInfo {
+	border-top: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+	padding: 5px;
+	float: left;
+	width: 380px;
+}
+
+form#registrationForm fieldset.childAdditionalInfo {
+	border-top: 1px solid #F1F1F1;
+	margin-left : 10px;
+	padding: 6px;
+	float: left;
+	width: 400px;
+}
+
+.errorMSg {
+	height: 20px;
+}

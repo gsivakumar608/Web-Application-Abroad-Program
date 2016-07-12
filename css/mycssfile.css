@@ -1,0 +1,302 @@
+/* Shubha Ravikumar, FNU Account: jadrn046
+CS545, Fall 2014
+Project #2 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	background: url('../img/background.jpg');
+	/* background-size: cover;
+	background-color: #ffff80; */
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	min-width: 900px;
+	/* the image will not compress to maintain a min of 900px*/
+	/* 	background-color: white;  */
+	/* font-family: "Georgia"; */
+	font-family: 'Open Sans', Tahoma, Arial, Helvetica;
+}
+
+p {
+	padding: 15px;
+	text-align: justify;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#container {
+	/*  min-height rather than height is needed to make sure that the text 
+    does not spill out of the container if the height of the browser
+    window isn't sufficient for all the text to fit without scrolling. */
+	top: 0px;
+	min-height: 400px;
+	background-color: #ffffff; /*#CCCCB2;*/
+	height: auto;
+	margin-right: 10%;
+	margin-left: 10%;
+	border: 1px solid #c0c0c0;
+	position: relative;
+	min-width: 900px;
+	color: black;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 5%;
+}
+
+#banner {
+	/*  min-height rather than height is needed to make sure that the text 
+    does not spill out of the container if the height of the browser
+    window isn't sufficient for all the text to fit without scrolling. */
+	margin-top: 5%;
+	min-height: 60px;
+	height: 90px;
+	margin-right: 10%;
+	margin-left: 10%;
+	border: 1px solid #c0c0c0;
+	position: relative;
+	min-width: 900px;
+	color: white;
+	background-color: white;
+	border-radius: 20px 20px 0 0;
+}
+
+#navigation ul {
+	text-align: right;
+	margin-left: 4px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	min-width: 900px;
+	width: 100%;
+}
+
+#navigation li {
+	display: inline;
+	margin-left: -4px;
+}
+
+#intro {
+	position: relative;
+	height: 250px;
+	width: 100%;
+	border-top: 2px solid #008080;
+	min-width: 900px;
+}
+
+.specialText {
+	margin-left: 590px;
+	top: 0;
+	float: left;
+	height: 250px;
+	width: auto;
+	position: absolute;
+	text-align: justify;
+	opacity: 0.8;
+	color: black;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+}
+
+.clear {
+	clear: both;
+}
+
+#contentWrapper {
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
+	min-width: 900px;
+	background-color: white;
+}
+
+.content {
+	top: 0;
+	position: relative;
+	margin-top: 10px;
+}
+
+.text {
+	margin: 10px;
+	min-width: 200px;
+	/* border-radius: 20px 20px 20px 20px; */
+	position: relative;
+	text-align: justify;
+	background-color: #f7f7f7;
+	float: left;
+	position: relative;
+	/* border: 2px solid #0F1F00; */
+	color: #0F1F00;
+}
+
+.contentInfo {
+	top: 0;
+	position: relative;
+	text-align: center;
+	background-color: #008080;
+	color: white;
+}
+
+.homePgImg {
+	width: 220px;
+	height: 100px;
+	float: right;
+	margin-left: 10px;
+	position: relative;
+}
+
+#leftColumn {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	padding: 0.5em 0 0 0;
+	margin: 22px 0 0 10px;
+
+	/* 	border-top: 2px solid #069; */
+	/* 	border-bottom: 1px solid #069; */
+	/* 	border-right-style: double;*/
+}
+
+div#leftColumn ul {
+	margin-bottom: 10px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+div#leftColumn li {
+	margin: 2px 5px 10px 20px;
+	background-color: #4775A3;
+	text-align: center;
+	list-style: none;
+	border: 2px solid #4775A3;
+	border-radius: 10px;
+}
+
+#leftColumn a {
+	color: white;
+	text-decoration: none;
+}
+
+#leftColumn a:hover {
+	color: #CCCCB2;
+}
+
+#leftColumn a:active {
+	color: white;
+}
+
+#contentColumn {
+	margin: 22px 20px 0 225px;
+}
+
+#contentColumn img.aboutUsImg {
+	height: 400px;
+	width: 600px;
+	margin: 3%;
+}
+
+#login{
+margin-top: 10px;
+background: linear-gradient(#008080, #00aaaa, #00cccc);
+padding-left: 20px;
+}
+
+.loginText {
+	color :white;
+	font-size: 18pt;
+	text-decoration: none;
+}
+ 
+.confirmationText{
+	color : green;
+}
+.childImg img{
+	height:200px;
+	width:300px;
+	margin:20px 10px 10px 10px;
+	float:left;
+}
+.contactInfo{
+	margin:20px 10px 10px 30px;
+	float:left;
+	border-left: 1px solid #c0c0c0;
+	padding-left: 20px;
+}
+
+table {
+	width:400px;
+	margin: 15px 15px 15px 15px;
+	
+	
+}
+td {
+	width : 80px;
+}
+.heading {
+	margin-top: 5px;
+	background-color: #008080;
+	color: white;
+	padding-left: 3px;
+	text-align: center;
+}
+
+
+.goBack{
+	background: linear-gradient(#008080, #00aaaa, #00cccc);
+	color: white;
+	font-size: 18pt;
+	text-decoration:none;
+	padding: 0px 5px 0px 5px;
+	border-radius : 15px;
+	margin:10px;
+	text-align: center;
+	
+}
+
+.goBack a:hover{
+	color : gray;
+}
+
+th {
+background: #008080;
+color:white;
+}
+
+.tableStyle {
+	width: 70%;
+	/* 	margin: 5px 30px 30px 70px; */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	 border-spacing: 2px;
+	border-collapse: collapse;
+	padding: 20px;
+	
+	
+}
+
+#tableStyle tr {
+	text-align: center;
+	color: black;
+}
+
+td {
+	text-align: left;
+	color: black;
+	padding : 5px;
+}
+
+#footer td{
+color : #008080;
+}
+

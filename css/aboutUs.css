@@ -1,0 +1,17 @@
+/* Shubha Ravikumar, FNU Account: jadrn046
+CS545, Fall 2014
+Project #2 */
+img {
+	height: 300px;
+	width: 450px;
+	float: left;
+	margin: 15px 15px 5px 15px;
+}
+
+.heading {
+	margin-top: 5px;
+	background-color: #008080;
+	color: white;
+	padding-left: 3px;
+	text-align: center;
+}

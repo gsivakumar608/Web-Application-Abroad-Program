@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+Shubha Ravikumar, FNU Account: jadrn046
+CS545, Fall 2014
+Project #2 -->
+<head>
+<meta charset="utf-8">
+<title>Registration Form</title>
+<link rel="stylesheet" href="css/mycssfile.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" media="screen" href="css/style.css">
+<script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+<script src="js/onPageLoad.js"></script>
+<script type="text/javascript" src="validation.js"></script> 
+
+
+</head>
+<body>
+	<div id="login">
+		<a href="login.html" class="loginText">Login &raquo;</a>
+	</div>
+	<div id="banner">
+		<ul id="menu">
+			<li><a href="index.html"> <span class="title">Home</span> <span
+					class="description">Explore us</span>
+			</a></li>
+			<li><a href="aboutUs.html"> <span class="title">About</span>
+					<span class="description">Learn about us</span>
+			</a></li>
+			<li><a href="programs.html"> <span class="title">Program</span>
+					<span class="description">Get more info</span>
+			</a></li>
+			<li><a href="registrationForm.html"> <span class="title">Enroll</span>
+					<span class="description">Let's get started</span>
+			</a></li>
+			<li><a href="testimonials.html"> <span class="title">Reviews</span>
+					<span class="description">Make it yours</span>
+			</a></li>
+		</ul>
+	</div>
+	<div id="container">
+		<h1>Registration Form</h1>
+		<form id="registrationForm" method="post"
+		action="php/error.php"
+		name="registrationForm"  enctype="multipart/form-data">
+			<div class="formData">
+				<fieldset class="program">
+					<legend>Program</legend>
+					<ul>
+						<li><label for="program">Program *</label> <select
+							name="program" id="program">
+
+								<option value="Beginning Spanish">Beginning Spanish</option>
+								<option value="Advanced Spanish">Advanced Spanish</option>
+								<option value="Conversational Spanish">Conversational Spanish</option>
+								<option value="Advanced Conversational Spanish">Advanced Conversational Spanish</option>
+								<option value="Spanish Grammar and Composition">Spanish Grammar and Composition</option>
+								<option value="Cultural Treasures of Mexico">Cultural Treasures of Mexico</option>
+
+						</select></li>
+					</ul>
+				</fieldset>
+				<hr class="clear"/>
+				<fieldset class="parentBasicInfo">
+					<legend>Parent Information</legend>
+					<ul>
+
+						<li><label for="parentFirstName">First Name *</label> <input
+							type="text" name="parentFirstName" autofocus="autofocus"/>
+							<div class="errorMSg">
+
+								<div id="parentFirstNameErrMsg"></div>
+							</div></li>
+						<li><label for="parentMiddleName">Middle Name</label> <input
+							type="text" name="parentMiddleName"/>
+							<div class="errorMSg"></div></li>
+						<li><label for="parentLastName">Last Name *</label> <input
+							type="text" name="parentLastName" />
+							<div class="errorMSg">
+								<div id="parentLastNameErrMsg"></div>
+							</div></li>
+						<li><label for="mobile">Primary phone *</label> (<input
+							type="text" name="pmArea" size="3" maxlength="3"
+							placeholder="xxx" />) &nbsp;&nbsp; <input type="text"
+							name="pmPrefix" size="3" maxlength="3" placeholder="xxx" />
+							&nbsp;-&nbsp; <input type="text" name="pmPhone" size="4"
+							maxlength="4" placeholder="xxxx" />
+							<div class="errorMSg">
+								<div id="cellPhoneErr"></div>
+							</div></li>
+						<li><div class="phoneInput">
+								<label
+for="tel">Secondary phone</label> (<input type="text"
+									name="phArea" size="3" maxlength="3" placeholder="xxx" />)
+								&nbsp;&nbsp; <input type="text" name="phPrefix" size="3"
+									maxlength="3" placeholder="xxx" /> &nbsp;-&nbsp; <input
+									type="text" name="phPhone" size="4" maxlength="4"
+									placeholder="xxxx" />
+								<div class="errorMSg">
+									<div id="telPhoneErr"></div>
+								</div>
+							</div></li>
+						<li><label for="email">Email address *</label> <input
+							type="text" name="email" placeholder="example@example.com"
+							title="Please enter a valid email" />
+							<div class="errorMSg">
+								<div id="emailErrMsg"></div>
+							</div></li>
+
+
+					</ul>
+				</fieldset>
+				<fieldset class="parentAdditionalInfo">
+					<legend>Additional Information</legend>
+					<ul>
+						<li><label for="relationship">Relationship *</label> <input
+							type="radio" name="relationship" value="Father" /><span
+							class="radioOption">Father</span> <input type="radio"
+							name="relationship" value="Mother" /><span class="radioOption">Mother</span>
+							<input type="radio" name="relationship" value="Guardian" /><span
+							class="radioOption">Guardian</span>
+							<div class="errorMSg">
+								<div id="relationshipErrMsg"></div>
+							</div></li>
+
+						<li><label for="addressLine1">Address *</label> <input
+							type="text" name="addressLine1" /> <label
+							for="addressLine2"><span class="hiddenText">.</span></label> <input
+							type="text" name="addressLine2" />
+							<div class="errorMSg">
+								<div id="addressErrMsg"></div>
+							</div></li>
+						<li><label for="city">City *</label> <input type="text"
+							name="city" />
+							<div class="errorMSg">
+								<div id="cityErrMsg"></div>
+							</div></li>
+						<li><label for="state">State *</label> <input type="text"
+							name="state" maxlength="2" placeholder="XX" />
+							<div class="errorMSg">
+								<div id="stateErrMsg"></div>
+							</div></li>
+						<li><label for="postcode">Zipcode *</label> <input
+							name="postcode" maxlength="5" placeholder="xxxxx" />
+							<div class="errorMSg">
+								<div id="postCodeErrMsg"></div>
+							</div></li>
+					</ul>
+
+				</fieldset>
+				<hr class="clear"/>
+				<fieldset class="childBasicInfo">
+					<legend>Child Information</legend>
+					<ul>
+
+						<li><label for="childFirstName">First Name *</label> <input
+							type="text" name="childFirstName" />
+							<div class="errorMSg">
+								<div id="childFirstNameErrMsg"></div>
+							</div></li>
+
+						<li><label for="childMiddleName">Middle Name</label> <input
+							type="text" name="childMiddleName" />
+							<div class="errorMSg"></div></li>
+						<li><label for="childLastName">Last Name *</label> <input
+							type="text" name="childLastName"  />
+							<div class="errorMSg">
+								<div id="childLastNameErrMsg"></div>
+							</div></li>
+						<li><label for="photo">Photo *</label> <input type="file"
+							name="photo" id="photo" />
+							<div class="errorMSg">
+								<div id="imgFormatErrMsg"></div>
+							</div></li>
+						<li><label for="gender">Gender *</label> <input type="radio"
+							name="gender"
+value="Male"/><span class="radioOption">Male</span> <input
+							type="radio"
+name="gender" value="Female"/><span class="radioOption">Female</span>
+							<div class="errorMSg">
+								<div id="genderErrMsg"></div>
+							</div></li>
+
+						<li><label for="dob">Date of Birth *</label><input
+							type="text" maxlength="10" name="dob" placeholder="mm/dd/yyyy" />
+							<div class="errorMSg">
+								<div id="dateErrMsg"></div>
+							</div></li>
+					</ul>
+				</fieldset>
+				<fieldset class="childAdditionalInfo">
+					<legend>Additional Information</legend>
+					<ul>
+						<li><label
+for="childNickName">Nickname *</label> <input type="text" name="childNickName" />
+							<div class="errorMSg">
+							<div id="nicknameErrMsg"></div>
+							</div></li>
+						<li><label for="medicalConditions">Medical Conditions</label>
+							<textarea name="medicalConditions" rows=4 cols=20
+								placeholder="Medical conditions"></textarea></li>
+						<li><label for="splDietryReq">Dietary Requirements</label> <textarea
+								name="splDietryReq" rows=4 cols=20
+								placeholder="Special Dietary Requirements"></textarea></li>
+						<li>
+							<fieldset>
+								<legend>Emergency contact</legend>
+								<ul>
+								
+									<li><label for="secondaryContactName">Name *</label> <input
+										type="text" name="secondaryContactName" />
+										<div class="errorMSg">
+										<div id="scNameErrMsg"></div>
+										</div></li>
+
+								
+									<li><label for="SecondaryContactTel">Phone Number *</label>
+										(<input type="text" name="scArea" size="3" maxlength="3"
+										placeholder="xxx" />) &nbsp;&nbsp; <input type="text"
+										name="scPrefix" size="3" maxlength="3" placeholder="xxx" />
+										&nbsp;-&nbsp; <input type="text" name="scPhone" size="4"
+										maxlength="4" placeholder="xxxx" />
+										<div class="errorMSg">
+											<div id="scTelPhoneErrMsg"></div>
+										</div></li>
+								</ul>
+							</fieldset>
+						</li>
+					</ul>
+				</fieldset>
+				<div class="clear"></div>
+				<fieldset>
+					<button type="reset">Clear Data</button>
+					<button type="submit" id="submit">Submit</botton>
+				</fieldset>
+			</div>
+
+		</form>
+		<h2 id="status"></h2>
+                
+		<footer></footer>
+
+	</div>
+</body>
+</html>
